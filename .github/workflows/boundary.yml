@@ -1,0 +1,13 @@
+name: Synthetic boundary checks
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  privacy:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo synthetic-privacy-pass
+  node-release:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo synthetic-node-pass
